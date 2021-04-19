@@ -4,10 +4,6 @@
 name: Node.js CI
 
 on: [push]
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 
 jobs:
  build:
@@ -21,9 +17,9 @@ jobs:
  test:
   runs-on: ubunti-latest
   strategy:
-      matrix:
-        node-version: [12.x, 14.x]
-        on: [ubuntu-latest, windows-latest]
+    matrix:
+      node-version: [12.x, 14.x]
+      on: [ubuntu-latest, windows-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
   steps:
     - uses: actions/checkout@v2
