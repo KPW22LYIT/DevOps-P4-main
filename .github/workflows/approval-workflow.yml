@@ -1,5 +1,5 @@
 name: Pull Request Labeller
-on: pull_requests_review
+on: pull_request_review
 jobs:
   labelWhenApproved:
     name: Label PR when approved
