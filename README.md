@@ -7,6 +7,7 @@ This is the starter repository for practical four of the module **DevOps Pipelin
 ### Learning outcomes
 In this practical exercise you will learn how to:
 
+
 [1] Add a GitHub workflow to your repository
 
 [2] Define build and test jobs
@@ -18,3 +19,4 @@ In this practical exercise you will learn how to:
 [5] Create build artefacts and share them between jobs
 
 [6] Automate pull request reviews using GitHub actions  
+
