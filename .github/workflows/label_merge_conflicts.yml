@@ -1,13 +1,13 @@
-name: 'Check for merge conflicts'
-on:
+name: "conflict-finder"
+on: 
   push:
-    branches:
-      - main
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: mschilde/auto-label-merge-conflicts@master
+      - uses: hcancelik/pr-conflict-finder@v1
         with:
-          CONFLICT_LABEL_NAME: 'has conflicts'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          secret_token: ${{ secrets.GITHUB_TOKEN }}
+          conflict_label: "Has Conflict"
+          max_tries: 5
+          wait_ms: 5000
